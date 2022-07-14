@@ -1,4 +1,4 @@
-/* General styles - put these straight into your stylesheet */
+/* General styles */
 
 body {
   margin: 0;
@@ -10,35 +10,57 @@ html {
   background-color: #ccc;
 }
 
-/* Selectors to be matched up with rulesets */
-
-.card article img
-.card footer
-.card header
-.card
-
-/* Rulesets to be matched up with selectors */
-
-{
+.card {
   width: 35em;
   height: 22em;
   margin: 5em auto;
-  background-colour: red;
+  background-color: red;
   border: 0.2em solid black;
   border-radius: 1.5em;
 }
 
-{
+.card header, .card footer {
+  height: 3.1em;
+  padding: 1em;
+}
+
+
+.card h2, .card p {
+  margin: 0;
+}
+
+
+.card article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+.card article p {
+  padding: 1em;
+  color: rgba(255,255,255,0.8);
+}
+
+.card header {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
 }
 
-{
+.card footer {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
 }
 
-{
-  max-height: 100%
-  float: right;
+.card header h2 {
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+.card footer p {
+  font-size: 1.5em;
+  line-height: 2;
 }
